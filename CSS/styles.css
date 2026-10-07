@@ -1,0 +1,20 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+}
+
+h1 {
+  color: rgb(89, 16, 162);
+}
+h2{
+  color: brown;
+}
+label{
+  color: coral;
+}
+p {
+  color:brown
+  font-size: 14px;
+  line-height: 1.5;
+}
