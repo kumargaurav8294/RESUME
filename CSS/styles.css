@@ -1,17 +1,22 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
-  background-color: gray;
+  background-color: ;
 }
 
 h1 {
-  color: rgb(89, 16, 162);
+  border-width: 40px;
+  color: rgb(141, 78, 205);
+  .container{
+    width: 40px;
+    margin:auto
+  }
 }
 h2{
   color: brown;
 }
 label{
-  color: coral;
+  color: aqua;
 }
 p {
   color:brown
