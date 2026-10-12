@@ -1,25 +1,25 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: ;
+/* reset */
+*{  
+    box-sizing: border-box;
 }
+header{
+    background-color: aqua;
+    padding:0px ;
+}
+.hover {
+  color: red; 
+}
+article {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px ;
+}
+p::first-letter {
+  font-weight: bold;
+}
+#About{
+    color: brown;
+}
+#Facilities{
 
-h1 {
-  border-width: 40px;
-  color: rgb(141, 78, 205);
-  .container{
-    width: 40px;
-    margin:auto
-  }
-}
-h2{
-  color: brown;
-}
-label{
-  color: aqua;
-}
-p {
-  color:brown
-  font-size: 14px;
-  line-height: 1.5;
 }
