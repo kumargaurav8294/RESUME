@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names on Background</title>
+
+    <style>
+        /* Remove default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-screen page */
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Fixed background image */
+        .background {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Name layout */
+        .name-grid {
+            position: fixed;
+            inset: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 15px;
+            color: brown;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Name positions */
+        .name {
+            display: flex;
+        }
+
+        .top-left {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .top-right {
+            grid-column: 3;
+            grid-row: 1;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .bottom-left {
+            grid-column: 1;
+            grid-row: 3;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .bottom-right {
+            grid-column: 3;
+            grid-row: 3;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .center {
+            grid-column: 2;
+            grid-row: 2;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background image -->
+    <img src="image.png" class="background" alt="Background">
+
+    <!-- Names -->
+    <div class="name-grid">
+        <div class="name top-left">Kumar Gaurav</div>
+        <div class="name top-right">Kumar Gaurav</div>
+        <div class="name bottom-left">Kumar Gaurav</div>
+        <div class="name bottom-right">Kumar Gaurav</div>
+        <div class="name center">Kumar Gaurav</div>
+    </div>
+
+</body>
+</html>
